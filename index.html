@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="l">
+        <div class="front-card">
+          <img src="images/card-logo.svg" alt="logo">
+          <input type="text" class="cNumber" value="0000 0000 0000 0000" disabled>
+          <div class="n">
+            <input type="text" class="cName" value="JANE APPLESEED" disabled>
+            <input type="text" class="cDate" value="00/00" disabled>
+          </div>
+        </div>
+      </div>
+      <div class="r">
+        <div class="back-card">
+          <input type="text" class="cCvc" value="000" disabled>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <form>
+        <label class="lName">
+          Cardholder Name
+          <p class="margin"></p>
+          <input type="text" class="name" placeholder="e.g. Jane Appleseed">
+        </label>
+        <p class="name-error"></p>
+        <label class="lNumber">
+          Card Number
+          <p class="margin"></p>
+          <input type="text" class="number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        </label>
+        <p class="number-error"></p>
+        <div class="lab-cont">
+          <label>
+            exp. date (mm/yy)
+            <input type="text" class="month" placeholder="MM" maxlength="2"><input type="text" class="year" placeholder="YY" maxlength="2">
+            <p class="date-error"></p>
+          </label>
+          <label>
+            cvc
+            <input type="text" class="cvc" placeholder="e.g. 123" minlength="3" maxlength="3">
+            <p class="cvc-error"></p>
+          </label>
+        </div>
+        <input type="submit" class="sbt" value="Confirm">
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Marcel Wrzeciono</a>.
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+</html>
